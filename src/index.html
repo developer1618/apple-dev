@@ -10,7 +10,15 @@
 <body class="bg-[#0b0b0b]">
   <header>
     <nav class="bg-[#1D1D1F] w-full fixed">
-        <ul class="flex justify-between items-center max-w-5xl max-lg:max-w-3xl mx-auto text-[#f5f5f7]">
+        <div class="max-sm:flex sm:hidden h-12 px-4 items-center">
+            <div>
+                <a href="#"><img src="/img/burger-menu.svg" alt="Menu"></a>
+            </div>
+            <div class="flex-1 flex justify-center">
+                <a href="#"><img src="/img/apple-dev-logo.svg" alt="Logo" class="max-w-[100px]"></a>
+            </div>
+        </div>
+        <ul class="flex justify-between items-center max-w-5xl max-lg:max-w-3xl mx-auto text-[#f5f5f7] max-sm:hidden">
             <li class="opacity-80 hover:opacity-100 text-[14px]"><a href="#"><img src="/img/apple-dev-logo.svg" alt="Logo" class="max-w-[112px]"></a></li>
             <li class="opacity-80 hover:opacity-100 text-[14px]"><a href="#">News</a></li>
             <li class="opacity-80 hover:opacity-100 text-[14px]"><a href="#">Discover</a></li>
@@ -22,13 +30,13 @@
             <li class="opacity-80 hover:opacity-100 text-[14px]"><a href="#"><img src="/img/search-icon.svg" alt="Search"></a></li>
         </ul>
     </nav>
-    <div class="text-center mx-auto bg-[#f5f5f7]">
-        <div class="pt-28 max-lg:pt-32">
-            <h2 class="text-[56px] max-lg:text-[44px] font-semibold tracking-tighter leading-none">Get ready for Apple Vision Pro</h2>
-            <h5 class="text-3xl max-lg:text-2xl font-normal tracking-tighter leading-none mt-4 mb-8">Now you can take your apps and games beyond the <br> visionOS simulator.</h5>
+    <div class="text-center mx-auto bg-[#f5f5f7] max-sm:mx-0 max-sm:mt-0 max-sm:mb-3">
+        <div class="pt-28 max-sm:pt-24 max-sm:px-6">
+            <h2 class="text-[56px] max-lg:text-[44px] max-sm:text-[32px] font-semibold tracking-tighter leading-none">Get ready for <br> Apple Vision Pro</h2>
+            <h5 class="text-3xl max-lg:text-2xl max-lg:text-[20px] font-normal tracking-tighter leading-none mt-4 mb-8">Now you can take your apps and games beyond the visionOS simulator.</h5>
         </div>
         <div class="flex justify-center">
-            <div class="max-w-3xl max-lg:max-w-xl mb-8 max-lg:my-16">
+            <div class="max-w-3xl max-lg:max-w-xl max-sm:mt-12 max-sm:mb-16 mb-8 max-lg:my-16">
                 <picture>
                     <source srcset="/img/apple-vision.webp" type="image/webp">
                     <img src="/img/apple-vision.png" alt="Vision">
@@ -38,22 +46,22 @@
     </div>
   </header>
   <main>
-    <div class="flex bg-[#0b0b0b]">
-        <a href="#" class="w-1/2 bg-black flex justify-center my-3 ml-3 mr-1.5 p-14 items-end">
+    <div class="flex max-sm:block bg-[#0b0b0b]">
+        <a href="#" class="w-1/2 max-sm:w-full bg-black flex justify-center my-3 ml-3 mr-1.5 max-sm:mx-0 max-sm:mt-0 max-sm:mb-3 p-14 items-end">
             <div class="">
-                    <div class="max-w-[350px] mx-auto max-lg:pb-8">
-                        <picture>
-                            <source srcset="/img/apple-event.webp" type="image/webp">
-                            <img src="/img/apple-event.jpg" alt="Event">
-                        </picture>
-                    </div>
-                    <div class="text-center">
-                        <h4 class="text-[#f5f5f7] font-semibold text-4xl max-lg:text-3xl">Apple Event</h4>
-                        <h5 class="text-[#f5f5f7] font-normal text-xl max-lg:text-lg">September 12, 2023</h5>
-                    </div>
+                <div class="max-w-[350px] mx-auto max-lg:pb-8">
+                    <picture>
+                        <source srcset="/img/apple-event.webp" type="image/webp">
+                        <img src="/img/apple-event.jpg" alt="Event">
+                    </picture>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-[#f5f5f7] font-semibold text-4xl max-lg:text-3xl">Apple Event</h4>
+                    <h5 class="text-[#f5f5f7] font-normal text-xl max-lg:text-lg">September 12, 2023</h5>
+                </div>
             </div>
         </a>
-        <a href="#" class="w-1/2 bg-[#33011b] flex justify-center items-end my-3 mr-3 ml-1.5 p-14">
+        <a href="#" class="w-1/2 max-sm:w-full bg-[#33011b] flex justify-center items-end my-3 mr-3 ml-1.5 max-sm:mx-0 max-sm:mt-0 max-sm:mb-3 p-14">
             <div class="">
                 <div class="max-w-[200px] mx-auto pb-16">
                     <img src="/img/apple-sdk.png" alt="Event">
@@ -64,10 +72,10 @@
             </div>
         </a>
     </div>
-    <div class="bg-gradient-to-t from-[#21283c] to-[#2e3e58] py-8">
+    <div class="bg-gradient-to-t from-[#21283c] to-[#2e3e58] max-sm:mx-0 max-sm:mt-0 max-sm:mb-3 py-8">
         <div class="mx-auto max-w-3xl max-lg:max-w-xl p-6">
             <div class="text-center mb-8">
-                <h4 class="text-[#f5f5f7] font-semibold text-4xl text-4xl">New to Apple platforms?</h4>
+                <h4 class="text-[#f5f5f7] font-semibold text-4xl max-sm:text-2xl">New to Apple platforms?</h4>
                 <p class="text-[#f5f5f7] font-normal text-xl">Get familiar with the tools and technologies you’ll use to build apps and games. The Apple development ecosystem provides everything you need to bring incredible experiences to people around the world.</p>
             </div>
             <div class="grid grid-rows-1 justify-between max-lg:grid-rows-2 grid-flow-col gap-4">
@@ -98,8 +106,8 @@
             </div>
         </div>
     </div>
-    <div class="flex bg-[#0b0b0b]">
-        <a href="#" class="w-1/2 bg-[#141414] hover:bg-[#222] flex justify-center items-start my-3 ml-3 mr-1.5 mb-1.5 p-14">
+    <div class="flex max-sm:block bg-[#0b0b0b]">
+        <a href="#" class="w-1/2 max-sm:w-full bg-[#141414] hover:bg-[#222] flex justify-center items-start my-3 ml-3 mr-1.5 mb-1.5 max-sm:mx-0 max-sm:mt-0 max-sm:mb-3 p-14">
             <div class="">
                 <div class="text-center pb-16">
                     <h4 class="text-[#f5f5f7] font-semibold text-4xl">visionOS</h4>
@@ -111,7 +119,7 @@
                 </div>
             </div>
         </a>
-        <a href="#" class="w-1/2 bg-[#141414] hover:bg-[#222] flex justify-center items-start mt-3 mr-3 ml-1.5 mb-1.5 p-14">
+        <a href="#" class="w-1/2 max-sm:w-full bg-[#141414] hover:bg-[#222] flex justify-center items-start mt-3 mr-3 ml-1.5 mb-1.5 max-sm:mx-0 max-sm:mt-0 max-sm:mb-3 p-14">
             <div class="">
                 <div class="text-center pb-8">
                     <h4 class="text-[#f5f5f7] font-semibold text-4xl">iOS 17</h4>
@@ -122,8 +130,8 @@
             </div>
         </a>
     </div>
-    <div class="flex bg-[#0b0b0b]">
-        <a href="#" class="w-1/2 bg-[#141414] hover:bg-[#222] flex justify-center items-start my-1.5 ml-3 mr-1.5 p-14">
+    <div class="flex max-sm:block bg-[#0b0b0b]">
+        <a href="#" class="w-1/2 max-sm:w-full bg-[#141414] hover:bg-[#222] flex justify-center items-start my-1.5 ml-3 mr-1.5 max-sm:mx-0 max-sm:mt-0 max-sm:mb-3 p-14">
             <div class="">
                 <div class="text-center pb-16">
                     <h4 class="text-[#f5f5f7] font-semibold text-4xl">iPadOS 17</h4>
@@ -135,7 +143,7 @@
                 </div>
             </div>
         </a>
-        <a href="#" class="w-1/2 bg-[#141414] hover:bg-[#222] flex justify-center items-start my-1.5 mr-3 ml-1.5 p-14">
+        <a href="#" class="w-1/2 max-sm:w-full bg-[#141414] hover:bg-[#222] flex justify-center items-start my-1.5 mr-3 ml-1.5 max-sm:mx-0 max-sm:mt-0 max-sm:mb-3 p-14">
             <div class="">
                 <div class="text-center pb-8">
                     <h4 class="text-[#f5f5f7] font-semibold text-4xl">macOS Sonoma</h4>
@@ -146,8 +154,8 @@
             </div>
         </a>
     </div>
-    <div class="flex bg-[#0b0b0b]">
-        <a href="#" class="w-1/2 bg-[#141414] hover:bg-[#222] flex justify-center items-start mt-1.5 ml-3 mb-3 mr-1.5 p-14">
+    <div class="flex max-sm:block bg-[#0b0b0b]">
+        <a href="#" class="w-1/2 max-sm:w-full bg-[#141414] hover:bg-[#222] flex justify-center items-start mt-1.5 ml-3 mb-3 mr-1.5 max-sm:mx-0 max-sm:mt-0 max-sm:mb-3 p-14">
             <div class="">
                 <div class="text-center pb-16">
                     <h4 class="text-[#f5f5f7] font-semibold text-4xl">watchOS 10</h4>
@@ -159,7 +167,7 @@
                 </div>
             </div>
         </a>
-        <a href="#" class="w-1/2 bg-[#141414] hover:bg-[#222] flex justify-center items-start mt-1.5 mr-3 mb-3 ml-1.5 p-14">
+        <a href="#" class="w-1/2 max-sm:w-full bg-[#141414] hover:bg-[#222] flex justify-center items-start mt-1.5 mr-3 mb-3 ml-1.5 max-sm:mx-0 max-sm:mt-0 max-sm:mb-3 p-14">
             <div class="">
                 <div class="text-center pb-16">
                     <h4 class="text-[#f5f5f7] font-semibold text-4xl">tvOS 17</h4>
@@ -199,7 +207,7 @@
   </main>
   <footer class="bg-[#1d1d1f]">
     <div class="max-w-5xl m-auto">
-        <div class="grid grid-rows-1 justify-between max-lg:justify-around max-lg:grid-rows-2 grid-flow-col max-lg:gap-16 py-16 px-4 max-lg:px-16">
+        <div class="grid grid-rows-1 justify-between max-lg:justify-around max-lg:grid-rows-2 max-sm:grid-rows-4 grid-flow-col max-lg:gap-16 py-16 px-4 max-lg:px-16">
             <div class="text-[#f5f5f7] w-52 text-center">
                 <div class="flex justify-center">
                     <img src="/img/download-c-i.svg" alt="Icon">
@@ -233,110 +241,110 @@
                 <a href="#" class="text-[#2997ff]"><span class="hover:underline text-[14px]">View forums</span> ></a>
             </div>
         </div>
-        <div class="pt-4 px-8">
-            <hr class="bg-[#424245]">
-            <nav class="flex justify-between text-[#a1a1a6] pt-4">
-                <div>
+        <div class="pt-4 px-8 max-sm:px-4">
+            <hr class="bg-[#424245] max-sm:hidden">
+            <nav class="flex justify-between text-[#a1a1a6] pt-4 max-sm:py-8 max-sm:block">
+                <div class="max-sm:block">
                     <ul class="pb-4">
-                        <li><span class="text-[#f5f5f7] text-xs">Platforms</span></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">iOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">iPadOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">macOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">tvOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">visionOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">watchOS</a></li>
+                        <li class="max-sm:border-b"><span class="text-[#f5f5f7] text-xs">Platforms</span></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">iOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">iPadOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">macOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">tvOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">visionOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">watchOS</a></li>
                     </ul>
                     <ul class="pb-4">
-                        <li><span class="text-[#f5f5f7] text-xs">Tools</span></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Swift</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">SwiftUI</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Swift Playgrounds</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">TestFlight</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Xcode</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Xcode Cloud</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">SF Symbols</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="pb-4">
-                        <li><span class="text-[#f5f5f7] text-xs">Topics & Technologies</span></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Accessibility</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Accessories</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">App Extensions</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">App Store</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Audio & Video</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Augmented Reality</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Business</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Design</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Distribution</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Education</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Fonts</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Games</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Health & Fitness</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">In-App Purchase</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Localization</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Maps & Location</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Machine Learning</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Open Source</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Security</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Safari & Web</a></li>
+                        <li class="max-sm:border-b"><span class="text-[#f5f5f7] text-xs">Tools</span></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Swift</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">SwiftUI</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Swift Playgrounds</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">TestFlight</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Xcode</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Xcode Cloud</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">SF Symbols</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="max-sm:block">
                     <ul class="pb-4">
-                        <li><span class="text-[#f5f5f7] text-xs">Resources</span></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">iOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">iPadOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">macOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">tvOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">visionOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">watchOS</a></li>
-                    </ul>
-                    <ul class="pb-4">
-                        <li><span class="text-[#f5f5f7] text-xs">Support</span></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Swift</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">SwiftUI</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Swift Playgrounds</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">TestFlight</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Xcode</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Xcode Cloud</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">SF Symbols</a></li>
-                    </ul>
-                    <ul class="pb-4">
-                        <li><span class="text-[#f5f5f7] text-xs">Account</span></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Swift</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">SwiftUI</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Swift Playgrounds</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">TestFlight</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Xcode</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Xcode Cloud</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">SF Symbols</a></li>
+                        <li class="max-sm:border-b"><span class="text-[#f5f5f7] text-xs">Topics & Technologies</span></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Accessibility</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Accessories</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">App Extensions</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">App Store</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Audio & Video</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Augmented Reality</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Business</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Design</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Distribution</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Education</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Fonts</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Games</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Health & Fitness</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">In-App Purchase</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Localization</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Maps & Location</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Machine Learning</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Open Source</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Security</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Safari & Web</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="max-sm:block">
                     <ul class="pb-4">
-                        <li class="text-[#f5f5f7] text-xs"><span>Programs</span></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">iOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">iPadOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">macOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">tvOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">visionOS</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">watchOS</a></li>
+                        <li class="max-sm:border-b"><span class="text-[#f5f5f7] text-xs">Resources</span></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">iOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">iPadOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">macOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">tvOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">visionOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">watchOS</a></li>
                     </ul>
                     <ul class="pb-4">
-                        <li class="text-[#f5f5f7] text-xs"><span>Events</span></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Swift</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">SwiftUI</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Swift Playgrounds</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">TestFlight</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Xcode</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">Xcode Cloud</a></li>
-                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs">SF Symbols</a></li>
+                        <li class="max-sm:border-b"><span class="text-[#f5f5f7] text-xs">Support</span></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Swift</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">SwiftUI</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Swift Playgrounds</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">TestFlight</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Xcode</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Xcode Cloud</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">SF Symbols</a></li>
+                    </ul>
+                    <ul class="pb-4">
+                        <li class="max-sm:border-b"><span class="text-[#f5f5f7] text-xs">Account</span></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Swift</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">SwiftUI</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Swift Playgrounds</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">TestFlight</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Xcode</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Xcode Cloud</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">SF Symbols</a></li>
+                    </ul>
+                </div>
+                <div class="max-sm:block">
+                    <ul class="pb-4">
+                        <li class="max-sm:border-b"><span class="text-[#f5f5f7] text-xs">Programs</span></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">iOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">iPadOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">macOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">tvOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">visionOS</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">watchOS</a></li>
+                    </ul>
+                    <ul class="pb-4">
+                        <li class="max-sm:border-b"><span class="text-[#f5f5f7] text-xs">Events</span></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Swift</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">SwiftUI</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Swift Playgrounds</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">TestFlight</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Xcode</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">Xcode Cloud</a></li>
+                        <li><a href="#" class="hover:underline hover:text-[#f5f5f7] text-xs max-sm:hidden">SF Symbols</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <div class="pb-6 px-8">
+        <div class="pb-6 px-8 max-sm:px-4">
             <div class="pb-2 border-b">
                 <p class="text-[#57575b] text-xs">Get the <a href="#" class="text-[#2997ff] hover:underline"> Apple Developer app.</a></p>
             </div>
@@ -345,10 +353,10 @@
                     <p class="text-[#57575b] text-xs">Copyright © 2023 <a href="#" class="text-[#a1a1a6] hover:underline hover:text-[#f5f5f7]"> Apple Inc. </a> All rights reserved.</p>
                 </div>
                 <div>
-                    <ul class="text-[#a1a1a6] text-xs flex pl-8">
+                    <ul class="text-[#a1a1a6] text-xs flex pl-8 max-sm:pl-4">
                         <li><a href="#" class="text-[#a1a1a6] hover:underline hover:text-[#f5f5f7] pr-4">Terms of Use</a></li>
-                        <li><a href="#" class="text-[#a1a1a6] hover:underline hover:text-[#f5f5f7] pr-4">Privacy Policy</a></li>
-                        <li><a href="#" class="text-[#a1a1a6] hover:underline hover:text-[#f5f5f7] pr-4">Agreements and Guidelines</a></li>
+                        <li><a href="#" class="text-[#a1a1a6] hover:underline hover:text-[#f5f5f7] pr-4 max-sm:pr-0">Privacy Policy</a></li>
+                        <li><a href="#" class="text-[#a1a1a6] hover:underline hover:text-[#f5f5f7]">Agreements and Guidelines</a></li>
                     </ul>
                 </div>
             </div>
